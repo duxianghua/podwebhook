@@ -1,0 +1,14 @@
+domain: jack.du.io
+layout:
+- go.kubebuilder.io/v3
+projectName: podwebhook
+repo: github.com/duxianghua/podwebhook
+resources:
+- group: core
+  kind: Pod
+  path: k8s.io/api/core/v1
+  version: v1
+  webhooks:
+    defaulting: true
+    webhookVersion: v1
+version: "3"
